@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0.5rem;
+    font-size: 1cm;
+}
+
+
+/* p{
+    background-color: lightblue;
+    margin: 100px;
+} */
+
+/* no margin att for inline element, but padding works
+display:inline-block will change that
+ */
+/* .opposite{
+    background-color: #333;
+    color: whitesmoke;
+} */
+
+ul{
+    list-style-type: none;
+    text-align: right;
+    background-color: whitesmoke;
+    padding-left: 0;
+}
+
+li{
+    display: inline-block;
+    margin-inline-end: 1rem;
+}
+
+li a{
+    color: #333;
+    text-decoration: none;
+}
+
+li a:hover,
+li a:focus{
+    text-decoration: underline;
+}

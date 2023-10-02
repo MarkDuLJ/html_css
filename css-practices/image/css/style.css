@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+
+    background-color: aliceblue;
+    /* background-image:url("../img/bubbles.png"), linear-gradient(to left, steelblue, #fff);
+    background-repeat: repeat-y,no-repeat;
+    background-position: right center; */
+    background-size: 20% auto;
+    background: repeat-y right center url("../img/bubbles.png"), no-repeat linear-gradient(to left, steelblue,#fff);
+}
+
+/* Utility classes */
+.nowrap{
+    white-space: nowrap;
+}
+
+.offscreen{
+    position: absolute;
+    left: -1000px;
+}
+/* Utility classes End*/
+
+.example{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid red;
+}
+
+/* img is in-line element */
+.example img{
+    width: 25%;
+    height: auto;
+}
+
+.profile-pic-fig{
+    width: 35%;
+}
+
+/* border-radius only apply square pic */
+.profile-pic-fig img{
+    width: 100%;
+    height: auto;
+    min-width: 150px;
+    border: 2px double gray;
+    border-radius: 50%;
+}
+
+.container{
+
+    background-color: rgb(251, 210, 156);
+    background-image: url("../img/scenic-2200x1331.png");
+    background-repeat: repeat;
+    background-position: top top;
+    background-size: cover;
+
+    background-color: hsla(0, 0%, 100%, 0.30);
+}
+
+.hero{
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.h1{
+    font-size: 300%;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    background-color: hsla(0, 0%, 0%, 0.317);
+    padding: .5rem;
+    border-radius: 20px;
+}
+
+.clip{
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url("../img/scenic-2200x1331.png");
+    background-size: 100%;
+    text-transform: uppercase;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid black;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: flex-end;
+    align-content: space-between;
+}
+
+
+/* use flex and justify-conent/align-items control body in div */
+.box{
+    /* min-width: 100px; */
+    height: 100px;
+    background-color: black;
+    color: #fff;
+    font-size: 2rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+/* flex:1 grow 2 shrink 3 basic */
+
+/* try flex-grow|shrink diff values */
+.box:nth-child(2){
+    flex:2 2 150px;
+    order:-1;
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0.5rem;
+    font-size: 1cm;
+}
+
+.columns{
+   columns: 3 250px;
+   column-rule: 1px solid red;
+   column-gap: 3rem;
+}
+
+.columns p{
+    margin-top: 0;
+}
+
+.columns h2{
+    margin-top: 0;
+    background-color: #333;
+    color: wheat;
+    padding: 1rem;
+    break-inside: avoid;
+}
+
+/* margin-top doesn't work, add another class to improve the priority */
+.columns .crosscolumn{
+    column-span:all;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight:900;
+}
+
+
+/* keep inside content in same line */
+.nowrap{
+    white-space: nowrap;
+}

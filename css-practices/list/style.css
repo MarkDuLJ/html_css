@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    padding: 5% 10%;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+ol{
+    list-style-type:upper-roman;
+    text-align: center;
+}
+
+ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-image: url("imgs/check-mark.png");
+    list-style-image: url("../../html-only/logo.svg");
+}
+
+ol li:nth-child(2){
+    color: red;
+}
+ol ::marker{
+    color: black;
+    content: "Big save>>";
+}

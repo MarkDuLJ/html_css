@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root{
+    /* COLOR */
+    --BGCOLOR:#475569;
+    --ALT-BGCOLOR:#1E293B;
+}
+/* || GENERAL STYLES */
+body {
+  font: 1.5rem "Nunito", sans-serif;
+  min-height: 100vh;
+
+  background-color: var(--BGCOLOR);
+  background-image:radial-gradient(whitesmoke,var(--BGCOLOR) );
+  display: flex;
+  flex-direction: column;
+}
+
+header, nav, main, footer{
+    display: grid;
+    /* place-content=align-content/justify-content */
+    place-content: center;
+    /* occupy whole line */
+    grid-template-columns: 100%;
+    /* put text to center */
+    text-align: center;
+}
+
+header,footer{
+    position: sticky;
+    background-color: var(--ALT-BGCOLOR);
+    color: whitesmoke;
+}
+
+header{
+    top: 0;
+}
+
+nav{
+    background-color: white;
+    color: black;
+    padding: .5rem;
+    border-bottom: 2px solid black;
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    bottom: 0;
+}
+
+/* || SMALL */
+@media screen and (min-width:576px) {
+    body{
+        background-color: green;
+        background-image: radial-gradient(whitesmoke,green);
+    }
+    nav{
+        display: none;
+    }
+}
+
+
+/* || MEDIUM */
+@media screen and (min-width:768px) {
+    body{
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke,gold);
+    }
+}
+
+/* || LARGE */
+@media screen and (min-width:992px) {
+    body{
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke,firebrick);
+    }
+}
+
+/* || XL */
+@media screen and (min-width:1200px) {
+    body{
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke,rebeccapurple);
+    }
+}
+
+/* || MOBILE LANDSCAPE */
+@media screen and (max-height:425px) and( min-aspect-ratio:7/4) {
+    body{
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke,dodgerblue);
+    }
+
+    h1,h2{
+        font-size: 1.5rem;
+    }
+
+    nav{
+        display: none;
+    }
+}

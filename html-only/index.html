@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="coder" content="Mark">
+        <title>this is title</title>
+        <link rel="icon" href="./logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./main.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>This year's goal</h1>
+            <nav aria-label="primary-nav">
+                <h2 id="primary-nav">Primary Navigation</h2>
+                <ul>
+                    <li><a href="#main">Main Part</a></li>
+                    <li><a href="#vocation">Vocation</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <article id="main">
+                <h3>Daily Schedule</h3>
+                <p>Let me tell you how:</p>
+                <section>
+                    <figure>
+                        <figcaption>Code example</figcaption>
+                        <p>
+                            <code>&lt;h1&gt;a = b + c  &lt;/h1&gt; </code>
+                        </p>
+                    </figure>
+                </section>
+                <section>
+                    <ol>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;Lear someting</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;running</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;lising 
+                            <a href="https://www.youtube.com/watch?v=xdkX-PQVAxE">opera</a>
+                        </li>
+                    </ol>  
+                </section>  
+                <aside>
+                    <details>
+                        <summary>Guess <mark>five</mark> plus five</summary>
+                        <p>ten</p>
+                    </details>
+                </aside> 
+                <br>
+                <table>
+                    <caption>schedule table</caption>
+                    <thead>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <th>Time</th>
+                            <th>Act</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2">Morning</th>
+                            <td>
+                                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                                <td>Write Code</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                                <td>Lunch</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Afternoon</th>
+                            <td colspan="3">Free Time</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">table footer</td>
+                        </tr>
+                    </tfoot>
+                </table> 
+            </article>
+            <hr>
+            <article id="vocation">
+                <h3>Vocation</h3>
+                <figure>
+                    <figcaption>Cold Beer</figcaption>
+                    <img 
+                        src="./img/draught-beer-png-mug.jpg" 
+                        alt="beer" 
+                        title="good for vocation"
+                        height="600"
+                        loading="lazy">
+                </figure>
+                <ul>
+                    <li>
+                        <p>that's what I <em>really</em> want always</p>
+                        <img 
+                            src="./img/draught-beer-png-mug.jpg" 
+                            alt="beer" 
+                            title="good for vocation"
+                            height="600">                    
+                </li>
+                </ul>
+                <h3>To avoid</h3>
+                <p>Anywhere above <strong>30</strong> degree</p>
+                <h3>Where I am</h3>
+                <p><abbr title="Ontario">ON</abbr></p>
+                <address>
+                    King Street<br>
+                    London<br>
+                </address>
+            </article>
+            <hr>
+            <article id="contact">
+                <h2>Contact Us</h2>
+                <p>really happy to hear from you!</p>
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                    <p>
+                        <label for="firstName">First Name</label>
+                        <input 
+                            type="text" 
+                            name="firstName" 
+                            id="firstName"
+                            placeholder="Timmy"
+                            autocomplete="on"
+                            required
+                            autofocus
+                            />
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name</label>
+                        <input 
+                            type="text" 
+                            name="lastName" 
+                            id="lastName"
+                            placeholder="Doe"
+                            autocomplete="on"
+                            required
+                            />
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input 
+                            type="password" 
+                            name="password" 
+                            id="password"
+                            placeholder="password"
+                            required
+                            />
+                    </p>
+                    <p>
+                        <label for="phone">Phone</label>
+                        <input 
+                            type="tel" 
+                            name="phone" 
+                            id="phone"
+                            placeholder="6666666666"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                            required
+                            />
+                    </p>
+                    <p>
+                        <label for="decade">Fav Decade</label>
+                        <input 
+                            type="number" 
+                            name="decade" 
+                            id="decade"
+                            min="1950"
+                            max="2030"
+                            step="10"
+                            value="2000"
+                            />
+                    </p>
+                    <p>
+                        <label for="coffee">Fav Coffee</label>
+                        <select name="coffee" id="coffee">
+                            <optgroup label="Coffees"> 
+                                <option value="regular">Regular Coffee</option>
+                                <option value="iced">Iced Coffee</option>
+                            </optgroup>
+                            <optgroup label="Espresso Drinks">
+                                <option value="Latte" selected>Latte</option>
+                                <option value="cappuccino">Cappuccino</option>
+                            </optgroup>
+                            <option value="others">Others</option>
+                        </select>
+                    </p>
+                   <!--  <p>
+                        <label for="coffee">Fav Coffee</label>
+                        <input type="text" name="coffee" id="coffee" list="coffee-list">
+                        <datalist id="coffee-list">
+
+                            <option value="regular">
+                            <option value="iced">
+                            <option value="Latte" selected>
+                            <option value="cappuccino">
+                            <option value="others">
+                        </datalist>    
+                        </select>
+                    </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What's your favorite</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="ham" value="ham">
+                        <label for="tacos">Ham</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="burger" value="burger">
+                        <label for="burger">Burger</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="Sandwitch" value="Sandwitch">
+                        <label for="Sandwitch">SandWitch</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do you have pets</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="turtle" value="turtle">
+                        <label for="turtle">Turtle</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send us a message</legend>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea name="messgae" id="message" cols="30" rows="10" placeholder="leave your message"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+        </main>
+        <hr>
+        <footer>
+            <p>
+                &lt;&lt;&copy;<a href="about.html">Mark</a>&gt;&gt;
+            </p>
+            <p><a href="#">Back to top</a></p>
+        </footer>
+
+    </body>
+</html>
